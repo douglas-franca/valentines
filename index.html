@@ -1,0 +1,46 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Happy Valentine's Day Max!</title>
+	<style>
+    /* Adicione estilos conforme necessário */
+    #heart {
+      font-size: 100px;
+      color: #ff69b4;
+    }
+
+    #message {
+      font-size: 24px;
+      color: #ff69b4;
+      text-align: center;
+      background-color: #ffffff;
+      margin-top: 20px;
+    }
+  </style>
+  
+</head>
+<body>
+	<body style="background-image: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYSqwipRnOz6jLKy5wkVISd1K9uDG_i8ZUR3O1CxyN6pMISAZRrRlwAzQAo_JpxBVOxTcvLkTLbqeoEL6WZGjQNUtiyJ=w1366-h646');">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+        <p style="font-size: 24px; color: #ff69b4; text-align: center; background-color: #ffffff;">Will you be my valentine?</p>
+        <button id="noButton" style="font-size: 20px; color: #ff0000; background-color: #ffc0cb; border: none; padding: 10px 20px; margin: 10px; cursor: pointer;">No</button>
+        <button id="yesButton" style="font-size: 20px; color: #ffffff; background-color: #ff69b4; border: none; padding: 10px 20px; margin: 10px; cursor: pointer;">Yes</button>
+				<div id="heart" style="display: none;">&#10084;
+					my girl
+				</div>
+    </div>
+</body>
+    <script type="text/javascript">
+				let fontSize = 24;
+        document.getElementById('noButton').addEventListener('click', function() {
+					fontSize += 10;
+          document.getElementById('yesButton').style.fontSize = `${fontSize}px`;
+        });
+
+				document.getElementById('yesButton').addEventListener('click', function() {
+					document.getElementById('heart').style.display = 'block';
+				});
+    </script>
+</body>
+</html>
